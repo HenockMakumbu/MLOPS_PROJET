@@ -3,12 +3,12 @@ install :
 	pip install -r requirements.txt
 
 test : 
-	pytest -vv main.py 
+	pytest -vv test_main.py 
 
 lint : 
-	pylint --disable=R,C main.py
+	pylint --disable=R,C test_main.py
 
 black :
-	black main.py
+	black test_main.py
 
 	

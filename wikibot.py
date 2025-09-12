@@ -4,7 +4,7 @@ from mylib.bot import scrape
 @click.command()
 @click.option("--name", help="length of the output from wikipedia")
 
-def cli(name='Micrisoft', length=1):
+def cli(name):
     result = scrape(name)
     click.echo(click.style(f"{result}:", fg="blue"))
 

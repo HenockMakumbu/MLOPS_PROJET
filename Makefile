@@ -9,6 +9,6 @@ lint :
 	pylint --disable=R,C test_wikibot.py
 
 black :
-	black test_main.py
+	black test_wikibot.py
 
 	

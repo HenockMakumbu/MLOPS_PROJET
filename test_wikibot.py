@@ -1,11 +1,4 @@
-# # from greetings import people
-
-
-# # def test_people_returns_hello():
-# #     assert people() == "hello"
-
-
-# import wikipedia
+ # import wikipedia   # safe to remove if unused
 from mylib.bot import scrape
 from click.testing import CliRunner
 from wikibot import cli
@@ -18,4 +11,3 @@ def test_wikibot():
     result = runner.invoke(cli, ['--name', 'Microsoft'])
     assert result.exit_code == 0
     assert 'Microsoft' in result.output
- 

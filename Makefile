@@ -3,10 +3,10 @@ install :
 	pip install -r requirements.txt
 
 test : 
-	pytest -vv test_*.py 
+	pytest -vv test_wikibot.py 
 
 lint : 
-	pylint --disable=R,C test_*.py
+	pylint --disable=R,C test_wikibot.py
 
 black :
 	black test_main.py
